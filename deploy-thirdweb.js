@@ -18,23 +18,6 @@ const { ethers } = require('ethers');
 const fs = require('fs');
 const path = require('path');
 
-// Contract ABI and Bytecode
-const CONTRACT_PATH = path.join(__dirname, 'contracts', 'MyToken.sol');
-const ISELF_TOKEN_ABI = [
-  "constructor(address treasury)",
-  "function name() view returns (string)",
-  "function symbol() view returns (string)",
-  "function decimals() view returns (uint8)",
-  "function totalSupply() view returns (uint256)",
-  "function balanceOf(address) view returns (uint256)",
-  "function transfer(address to, uint256 amount) returns (bool)",
-  "function allowance(address owner, address spender) view returns (uint256)",
-  "function approve(address spender, uint256 amount) returns (bool)",
-  "function transferFrom(address from, address to, uint256 amount) returns (bool)",
-  "function MAX_SUPPLY() view returns (uint256)",
-  "function permit(address owner, address spender, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s)"
-];
-
 // Configuration validation
 function validateConfig() {
   const requiredVars = ['THIRDWEB_SECRET_KEY', 'PRIVATE_KEY', 'NETWORK'];

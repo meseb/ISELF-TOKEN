@@ -131,7 +131,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📜 License
 
-MIT License - See [LICENSE](licenze/) for details
+MIT License - See LICENSE file for details
 
 ## 🎓 Learn More
 
