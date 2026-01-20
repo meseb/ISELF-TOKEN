@@ -1,0 +1,28 @@
+{
+  "name": "iself-token",
+  "version": "1.0.0",
+  "description": "ISELF Token - Deployment scripts for thirdweb",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "node deploy-thirdweb.js",
+    "deploy:testnet": "node deploy-thirdweb.js --network testnet"
+  },
+  "keywords": [
+    "token",
+    "iself",
+    "thirdweb",
+    "ethereum",
+    "erc20"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@thirdweb-dev/sdk": "^3.10.67",
+    "ethers": "^5.7.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
